@@ -2,7 +2,7 @@ const app = require('supertest')(require('../app'));
 const jwt = require('jwt-simple'); // jwt-simple does the encoding and decoding. all it needs is the user id and SECRET
 const { expect } = require('chai');
 
-describe('api', () => {
+describe('API', () => {
 
   // testing generating token with valid and invalid credentials
   describe('POST /api/tokens', () => {
